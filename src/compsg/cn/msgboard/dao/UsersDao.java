@@ -90,7 +90,7 @@ public class UsersDao {
 		PreparedStatement pstat = null;
 		try {
 			pstat = con.prepareStatement("insert into users values" +
-					"(users_seq.nextval,?,?,?,?,?,?)");
+					"(?,?,?,?,?,?)");
 			pstat.setString(1, user.getUserName());
 			pstat.setString(2, user.getUserNickName());
 			pstat.setString(3, user.getUserPassword());

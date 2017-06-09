@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<Resource
+			auth="Container"
+			name="jdbc/msgboard"
+			type="javax.sql.DataSource"
+			username="root"
+			password="root"
+			driverClassName="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://localhost:3306/msgboard"
+			maxldle="10"
+			maxActive="20"
+			maxWait="10000" />
+</Context>
